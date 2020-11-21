@@ -1,0 +1,10 @@
+.main {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.home-menu {
+  background: #263238;
+  width: 264px;
+  height: 2000px;
+}

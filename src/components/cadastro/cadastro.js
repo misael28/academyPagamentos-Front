@@ -1,7 +1,7 @@
 import "./cadastro.css";
 import logoTipo from "./academy.png";
-import olhinhoAberto from "./olhinhoAberto.png";
 import olhinhoFechado from "./olhinhoFechado.png";
+import { Link } from "react-router-dom";
 
 const cadastro = () => {
   return (
@@ -40,7 +40,7 @@ const cadastro = () => {
             <p>
               Já possui uma conta?
               <span>
-                <a href="../components/login/login">Acesse agora!</a>
+                <Link to="/">Acesse agora!</Link>
               </span>
             </p>
           </div>

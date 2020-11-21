@@ -1,7 +1,7 @@
 import "./login.css";
 import logoTipo from "./academy.png";
-import olhinhoAberto from "./olhinhoAberto.png";
 import olhinhoFechado from "./olhinhoFechado.png";
+import { Link } from "react-router-dom";
 const login = () => {
   return (
     <div>
@@ -29,12 +29,12 @@ const login = () => {
             </div>
           </form>
 
-          <button>Entrar</button>
+          <button ><Link to="/home">Entrar</Link></button>
           <div className="cadastro">
             <p>
               Não tem uma conta?
               <span>
-                <a href="/">Cadastre-se</a>
+                <Link to="/cadastro">Cadastre-se</Link>
               </span>
             </p>
           </div>

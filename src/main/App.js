@@ -1,12 +1,16 @@
 import "./App.css";
-import Login from "../components/login/login";
-import Cadastro from "../components/cadastro/cadastro.js";
+import { BrowserRouter } from "react-router-dom";
+import Routes from "../routes/routes.js";
+
 function App() {
   return (
-    <div className="App">
-      {/* <Login /> */}
-      {/*<Cadastro />*/}
-    </div>
+    <>
+      <div className="App">
+        <BrowserRouter>
+          <Routes />
+        </BrowserRouter>
+      </div>
+    </>
   );
 }
 
