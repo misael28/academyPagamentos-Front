@@ -1,0 +1,23 @@
+nav {
+  background-color: #263238;
+  width: 264px;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+nav img {
+  margin: 50px auto;
+}
+
+nav a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: white;
+  text-decoration: none;
+}

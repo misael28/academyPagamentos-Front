@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 60px 30px 60px;
+}
+
+.forget {
+  width: 100%;
+}
+
+.forget a {
+  color: #263238;
+  font-size: small;
+  float: right;
+  margin-bottom: 1em;
+}
+
+p {
+  color: #263238;
+  font-size: small;
+}
+
+p a {
+  color: palevioletred;
+  margin-left: 10px;
+}
+
+.mostrarSenha {
+  position: relative;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.mostrarSenha img {
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  bottom: 0px;
+  right: 0px;
+  left: 250px;
+}
