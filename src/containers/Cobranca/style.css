@@ -3,4 +3,10 @@
   height: 100vh;
   flex-direction: row;
   width: 100%;
+  background: lightgray;
 }
+
+
+.container-cobranca button {
+	margin: auto;
+  }

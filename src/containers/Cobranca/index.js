@@ -1,11 +1,15 @@
 import "./style.css";
 import Sidebar from "../../components/Sidebar";
+import Header from "../../components/Header";
+import Button from "../../components/Button";
 const Cobranca = () => {
   return (
-    <div className="container-home">
-      <Sidebar />
+    <div className="container-cobranca">
+      <Sidebar>
+        <Button>Gerar Cobranças</Button>
+      </Sidebar>
       <main>
-        <p>MISA THE NEXT FRONT</p>
+        <Header>200,00</Header>
       </main>
     </div>
   );

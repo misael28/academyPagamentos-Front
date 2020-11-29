@@ -1,0 +1,54 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1104px;
+  height: 228px;
+  background: #ffffff;
+}
+
+.card-saldo {
+  margin-left: 2em;
+  width: 198px;
+  height: 92px;
+  background: #374952;
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card-saldo p,
+h1 {
+  color: white;
+}
+
+.header-container img {
+  width: 40px;
+  height: 40px;
+}
+
+.deslogar {
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.deslogar button {
+  width: 100px;
+  height: 56px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.deslogar button img {
+  width: 24px;
+  height: 24px;
+}
+
+.deslogar-incone {
+  margin-left: 3em;
+}

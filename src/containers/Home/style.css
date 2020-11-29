@@ -1,6 +1,16 @@
 .container-home {
   display: flex;
-  height: 100vh;
+  height: 230vh;
   flex-direction: row;
   width: 100%;
+  background: lightgray;
+}
+
+.home-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-home button {
+  margin: auto;
 }

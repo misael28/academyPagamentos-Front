@@ -1,0 +1,15 @@
+.content-insider {
+  margin: 3.2em;
+  display: flex;
+  justify-content: space-around;
+  width: 266px;
+  height: 80px;
+  border: 2px solid #4ec06e;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: black;
+}
+
+.content-insider h3 {
+  color: black;
+}
