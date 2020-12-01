@@ -55,14 +55,8 @@ const Home = () => {
             </div>
             <h3>Clientes</h3>
           </ContentHeader>
-          <ContentInsider>
-            <h3>Em dias</h3>
-            <h3>0</h3>
-          </ContentInsider>
-          <ContentInsider>
-            <h3>Inadimplentes</h3>
-            <h3>0</h3>
-          </ContentInsider>
+          <ContentInsider borderColor="blue" title="Em dias" value="0" />
+          <ContentInsider borderColor="red" title="Inadiplemente" value="0" />
         </Content>
         <Content>
           <ContentHeader>
@@ -71,18 +65,9 @@ const Home = () => {
             </div>
             <h3>Cobranças</h3>
           </ContentHeader>
-          <ContentInsider>
-            <h3>Inadimplentes</h3>
-            <h3>0</h3>
-          </ContentInsider>
-          <ContentInsider>
-            <h3>Inadimplentes</h3>
-            <h3>0</h3>
-          </ContentInsider>
-          <ContentInsider>
-            <h3>Inadimplentes</h3>
-            <h3>0</h3>
-          </ContentInsider>
+          <ContentInsider borderColor="red" title="Inadiplemente" value="0" />
+          <ContentInsider borderColor="red" title="Inadiplemente" value="0" />
+          <ContentInsider borderColor="red" title="Inadiplemente" value="0" />
         </Content>
         <Content>
           <ContentHeader>

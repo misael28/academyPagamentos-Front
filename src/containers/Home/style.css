@@ -9,6 +9,7 @@
 .home-main {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .container-home button {

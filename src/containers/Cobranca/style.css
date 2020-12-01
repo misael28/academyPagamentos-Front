@@ -1,12 +1,50 @@
 .container-cobranca {
   display: flex;
-  height: 100vh;
+  height: 230vh;
   flex-direction: row;
   width: 100%;
   background: lightgray;
 }
 
-
 .container-cobranca button {
-	margin: auto;
-  }
+  margin: auto;
+}
+
+table {
+  width: 960px;
+  margin: 10px auto;
+}
+
+table,
+tr,
+td,
+th {
+  border-collapse: collapse;
+  font-size: large;
+}
+
+.estilo-thead tr {
+  height: 32px;
+  background: #9dbbc3;
+  border-radius: 8px;
+  margin:1em;
+}
+
+tr {
+  height: 48px;
+  background: #ffffff;
+  border-radius: 8px;
+  margin:1em;
+}
+
+.estilo-thead td {
+  color: white;
+}
+
+.estilo-tbody td {
+  color: #4c4c4c;
+}
+
+th{
+	margin:1em;
+}
