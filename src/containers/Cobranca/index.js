@@ -3,6 +3,8 @@ import Sidebar from "../../components/Sidebar";
 import Header from "../../components/Header";
 import Button from "../../components/Button";
 import printer from "../../assets/printer.png";
+import InputButton from "../../components/InputButton"
+
 const Cobranca = () => {
   return (
     <div className="container-cobranca">
@@ -11,6 +13,10 @@ const Cobranca = () => {
       </Sidebar>
       <main>
         <Header>200,00</Header>
+		<div className="busca">
+		<InputButton/>
+		</div>
+		
         <table>
           <thead className="estilo-thead">
             <tr>

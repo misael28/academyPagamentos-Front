@@ -9,3 +9,8 @@
 .container-clientes button {
   margin: auto;
 }
+
+.busca {
+	margin-top: 1em;
+	width: 100%;
+  }

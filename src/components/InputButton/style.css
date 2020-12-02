@@ -1,0 +1,27 @@
+.container-busca {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 432px;
+  float: right;
+}
+
+.input-button-search-i {
+  width: 320px;
+  height: 40px;
+  background: #f7f7f7;
+  border: 1px solid #374952;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.input-button-search {
+  position: relative;
+  right: 50px;
+  width: 124px;
+  height: 40px;
+  background: #374952;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
