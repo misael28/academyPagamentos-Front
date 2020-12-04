@@ -21,7 +21,6 @@ const Login = () => {
           className="form"
           onSubmit={handleSubmit((data) => {
             const { email, senha } = data;
-            console.log(data);
             login(email, senha);
           })}
         >

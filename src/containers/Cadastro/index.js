@@ -6,20 +6,54 @@ import { Link } from "react-router-dom";
 import Card from "../../components/Card";
 import Button from "../../components/Button";
 import Input from "../../components/Input";
+import { useForm } from "react-hook-form";
+
+function cadastro(nome, email, senha) {
+  fetch("http://localhost:8081/usuarios", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ nome, email, senha }),
+  })
+}
 
 const Cadastro = () => {
   const [hiddenPassword, setHiddenPassword] = useState("false");
+  const { register, handleSubmit } = useForm();
+
   return (
     <div className="container">
       <Card>
-        <form className="form">
-          <Input type="text" placeholder="Seu nome aqui">
+        <form
+          className="form"
+          onSubmit={handleSubmit((data) => {
+			const { nome, email, senha } = data;
+			console.log(data)
+            cadastro(nome, email, senha);
+          })}
+        >
+          <Input
+            register={register}
+            name="nome"
+            type="text"
+            placeholder="Seu nome aqui"
+          >
             Nome
           </Input>
-          <Input type="email" placeholder="example@gmail.com">
+          <Input
+            register={register}
+            name="email"
+            type="email"
+            placeholder="example@gmail.com"
+          >
             Email
           </Input>
-          <Input type={hiddenPassword ? "password" : "text"}>
+          <Input
+            register={register}
+            name="senha"
+            type={hiddenPassword ? "password" : "text"}
+          >
             Senha
             <button
               type="button"
@@ -37,7 +71,7 @@ const Cadastro = () => {
           <div className="forget">
             <Link to="/recovery">Esqueci minha senha</Link>
           </div>
-          <Button type="submit" onClick={() => {}}>
+          <Button type="submit">
             Entrar
           </Button>
         </form>
