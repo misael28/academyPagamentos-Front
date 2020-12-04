@@ -6,18 +6,38 @@ import { Link } from "react-router-dom";
 import Card from "../../components/Card";
 import Button from "../../components/Button";
 import Input from "../../components/Input";
+import { useForm } from "react-hook-form";
+import { LoginContainer } from "../../index";
 
 const Login = () => {
   const [hiddenPassword, setHiddenPassword] = useState("false");
+  const { register, handleSubmit } = useForm();
+  const { login } = LoginContainer.useContainer();
 
   return (
     <div className="container">
       <Card>
-        <form className="form">
-          <Input type="email" placeholder="example@gmail.com">
+        <form
+          className="form"
+          onSubmit={handleSubmit((data) => {
+            const { email, senha } = data;
+            console.log(data);
+            login(email, senha);
+          })}
+        >
+          <Input
+            register={register}
+            name="email"
+            type="email"
+            placeholder="example@gmail.com"
+          >
             Email
           </Input>
-          <Input type={hiddenPassword ? "password" : "text"}>
+          <Input
+            register={register}
+            name="senha"
+            type={hiddenPassword ? "password" : "text"}
+          >
             Senha
             <button
               type="button"
@@ -35,13 +55,7 @@ const Login = () => {
           <div className="forget">
             <Link to="/recovery">Esqueci minha senha</Link>
           </div>
-          <Link to="/home">
-            <Button type="submit">Entrar</Button>
-          </Link>
-
-          {/*<Button type="submit" onClick={() => {handleSubmit}}>
-            Entrar
-			</Button>*/}
+          <Button type="submit">Entrar</Button>
         </form>
       </Card>
       <p>

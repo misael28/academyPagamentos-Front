@@ -5,6 +5,8 @@ const Input = (props) => {
     <label className="label">
       {props.children}
       <input
+	    ref={props.register}
+        name={props.name}
         className={`input ${props.className}`}
         type={props.type}
         placeholder={props.placeholder}
