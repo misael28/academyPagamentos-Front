@@ -3,20 +3,23 @@ import Sidebar from "../../components/Sidebar";
 import Header from "../../components/Header";
 import Button from "../../components/Button";
 import printer from "../../assets/printer.png";
-import InputButton from "../../components/InputButton"
+import InputButton from "../../components/InputButton";
+import { Link } from "react-router-dom";
 
 const Cobranca = () => {
   return (
     <div className="container-cobranca">
       <Sidebar>
-        <Button>Gerar Cobranças</Button>
+        <Link to="/criarcobranca">
+          <Button>Gerar Cobranças</Button>
+        </Link>
       </Sidebar>
       <main>
         <Header>200,00</Header>
-		<div className="busca">
-		<InputButton/>
-		</div>
-		
+        <div className="busca">
+          <InputButton />
+        </div>
+
         <table>
           <thead className="estilo-thead">
             <tr>

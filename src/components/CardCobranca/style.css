@@ -1,0 +1,11 @@
+.cobranca-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 223px;
+  margin-left: 1em;
+  width: 1200px;
+  height: 600px;
+  background: #ffffff;
+  border-radius: 16px;
+}

@@ -6,6 +6,7 @@ import Cadastro from "../containers/Cadastro/index.js";
 import Home from "../containers/Home";
 import Clientes from "../containers/Clientes";
 import Cobranca from "../containers/Cobranca";
+import CriarCobranca from "../containers/CriarCobranca"
 
 import RecoveryPassword from "../containers/RecoveryPassword/index.js";
 
@@ -27,6 +28,7 @@ export default function Routes() {
           <Route path="/home" exact component={Home} />
           <Route path="/clientes" exact component={Clientes} />
           <Route path="/cobranca" exact component={Cobranca} />
+		  <Route path="/criarcobranca" exact component={CriarCobranca}/>
         </Switch>
       )}
     </BrowserRouter>

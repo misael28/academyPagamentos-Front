@@ -9,10 +9,12 @@ import Input from "../../components/Input";
 import { useForm } from "react-hook-form";
 import { LoginContainer } from "../../index";
 
+
 const Login = () => {
   const [hiddenPassword, setHiddenPassword] = useState("false");
   const { register, handleSubmit } = useForm();
   const { login } = LoginContainer.useContainer();
+  
 
   return (
     <div className="container">
@@ -20,8 +22,8 @@ const Login = () => {
         <form
           className="form"
           onSubmit={handleSubmit((data) => {
-            const { email, senha } = data;
-            login(email, senha);
+			const { email, senha } = data;
+			login(email, senha);
           })}
         >
           <Input

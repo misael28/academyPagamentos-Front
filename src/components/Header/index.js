@@ -1,7 +1,10 @@
 import incone from "../../assets/incone.png";
 import "./style.css";
 import deslog from "../../assets/log-out.png";
+import { LoginContainer } from "../../index";
+
 const Header = (props) => {
+  const { logout } = LoginContainer.useContainer();
   return (
     <div className="header-container">
       <div className="card-saldo">

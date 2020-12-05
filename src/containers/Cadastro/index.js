@@ -29,7 +29,7 @@ const Cadastro = () => {
           className="form"
           onSubmit={handleSubmit((data) => {
 			const { nome, email, senha } = data;
-			console.log(data)
+		
             cadastro(nome, email, senha);
           })}
         >

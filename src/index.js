@@ -27,7 +27,7 @@ function UserLogin() {
   }
 
   function logout() {
-    setToken(null);
+    setToken("");
     localStorage.clear();
   }
 

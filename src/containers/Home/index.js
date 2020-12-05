@@ -48,6 +48,7 @@ const Home = () => {
       </Sidebar>
       <main className="home-main">
         <Header>200,00</Header>
+
         <Content>
           <ContentHeader>
             <div>

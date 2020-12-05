@@ -1,0 +1,36 @@
+.container-home {
+  display: flex;
+  height: 230vh;
+  flex-direction: row;
+  width: 100%;
+  background: lightgray;
+}
+
+.home-main-cobranca {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 1200px;
+}
+
+.container-home button {
+  margin: auto;
+}
+
+.home-main-cobranca h3 {
+  text-align: left;
+  margin-left: 0 auto;
+}
+.criar-cobranca-content {
+  width: 800px;
+}
+
+.button-cobranca {
+  display: flex;
+  justify-content: space-around;
+}
+
+label {
+  text-align: left;
+  margin-left: 0 auto;
+}
